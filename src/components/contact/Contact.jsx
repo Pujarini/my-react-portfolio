@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import Gmail from "../../images/gmail.png";
 import LinkedIn from "../../images/linkedin.png";
 import Twitter from "../../images/twitter.png";
@@ -7,12 +7,11 @@ import "./styles.css";
 
 function Contact() {
   const formRef = useRef();
-  const [done, setdone] = useState(false);
 
   const handleSubmitForm = (e) => {
     e.preventDefault();
-    setdone(true);
-    console.log("submit", formRef);
+    console.log(formRef.current, formRef.current.children, formRef);
+    // setdone(true);
     emailjs
       .sendForm(
         "service_2gnzee3",
@@ -74,7 +73,6 @@ function Contact() {
             <input type="text" placeholder="Email" name="user_email" />
             <textarea rows="3" placeholder="Message" name="user_message" />
             <button>Submit</button>
-            {done && "I Will reach out to you soon"}
           </form>
         </div>
       </div>

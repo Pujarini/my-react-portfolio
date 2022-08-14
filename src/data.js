@@ -2,6 +2,7 @@ import AirBnb from "./images/airbnb.png";
 import SmartBrain from "./images/smart-face.png";
 import Covid from "./images/covid.png";
 import Crypto from "./images/crypto.png";
+import Portfolio from "./images/portfolio.png";
 
 export const Products=[
     {
@@ -26,7 +27,7 @@ export const Products=[
     },
     {
         id:5,
-        img:"",
-        link:""
+        img:Portfolio,
+        link:"https://pujarini-portfolio-v2.netlify.app/"
     }
 ]
