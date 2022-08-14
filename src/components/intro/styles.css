@@ -1,0 +1,153 @@
+.i {
+  display: flex;
+  height: 100vh;
+  /* background-color: aqua; */
+}
+
+.i-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.i-left-wrapper {
+  padding: 50px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro {
+  font-size: 30px;
+  font-weight: 300;
+  color: orange;
+}
+
+.intro-name {
+  font-size: 60px;
+}
+
+.emoji {
+  font-size: 80px;
+  animation: wave 3s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.title-wrapper {
+  height: 50%;
+  padding-top: 50px;
+  animation: move 10s ease-in infinite alternate;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(-50px);
+  }
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+}
+
+.title-wrapper-item {
+  height: 50px;
+  font-size: 40px;
+  color: orange;
+  font-weight: 400;
+  align-items: center;
+}
+
+.i-scroll {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.i-description {
+  line-height: 1.5;
+  width: 75%;
+  padding-top: 20px;
+  /* padding-top: 25px; */
+}
+
+.i-right {
+  flex: 1;
+  position: relative;
+}
+
+.i-bg {
+  clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  background-color: orange;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.i-img {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
+  position: absolute;
+}
+
+@media screen and (max-width: 480px) {
+  .i {
+    flex-direction: column;
+  }
+  .i-scroll {
+    bottom: -20px;
+  }
+  .i-left-wrapper {
+    padding: 35px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+  .i-right {
+    margin-bottom: 10%;
+  }
+}
