@@ -17,12 +17,11 @@ const About = () => {
           I am a Software Developer working in frontend for 2+ years now.
         </p>
         <p className="a-desc">
-          Pujarini jena is a Software Developer working at an Unicorn Startup.
+          Pujarini Jena is a Software Developer working at an Unicorn Startup.
           She has an experience of 2+ years in Frontend development. She has
-          worked on React , JavaScript specifically. I have worked on
-          consumer-facing products for 2 geographies at my current company.Prior
-          to that I was working on an internal product of my first organisation.
-          In her free time she likes to host Twitter spaces related to Developer
+          worked on React , JavaScript specifically. She has worked on
+          consumer-facing products for 2 geographies at her current company. In
+          her free time she likes to host Twitter spaces related to Developer
           stuff. Apart from that she is also a Technical Blogger.
         </p>
       </div>
